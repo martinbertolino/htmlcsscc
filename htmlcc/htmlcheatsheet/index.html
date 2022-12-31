@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>HTML CheatSheet</title>
+</head>
+
+<body>
+    <a href="blog.html">Blog</a>
+    <hr>
+    <!-- -->
+    <h1>Heading One</h1>
+    <h2>Heading Two</h2>
+    <h3>Heading Three</h3>
+    <h4>Heading Four</h4>
+    <h5>Heading Five</h5>
+    <h6>Heading Sic</h6>
+
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. <em>
+            Repellendus eligendi doloremque, itaque obcaecati
+            hic ullam
+            quasi corporis incidunt facere in sint, accusantium quidem molestiae commodi minima tempore ratione
+            laudantium at.
+        </em>
+    </p>
+    <p><strong>Lorem ipsum dolor sit amet consectetur adipisicing elit.</strong> Odio eaque quam corrupti error sint
+        facilis
+        doloremque hic
+        laborum quos? Dolorem id, officia a voluptatum distinctio modi impedit inventore qui repudiandae vero
+        mollitia ex
+        maiores quibusdam quis, <a href="https://google.com" target="_blank">odit consequuntur corrupti sint</a> non
+        quos dignissimos quae ducimus minima nam. Veniam
+        quo
+        dolorem totam perferendis ipsum labore, animi quis officiis aliquid optio doloremque, aperiam consequatur
+        eaque
+        voluptatibus hic ea nam illo, perspiciatis saepe! Molestiae ipsum consectetur esse placeat optio quam
+        praesentium
+        quaerat iure dicta aliquid. Rem, aliquam sint. Rerum odio iste commodi voluptas officiis asperiores?
+        Obcaecati sint
+        ipsum fugiat doloribus itaque natus nihil.</p>
+
+    <!-- block level (start new line, take fill width) vs. inline level elements (do not start a new line, take only the needed spce) -->
+
+    <!-- lists -->
+    <ul>
+        <li>List Item 1</li>
+        <li>List Item 2</li>
+        <li>List Item 3</li>
+        <li>List Item 4</li>
+    </ul>
+
+    <ol>
+        <li>List Item 1</li>
+        <li>List Item 2</li>
+        <li>List Item 3</li>
+        <li>List Item 4</li>
+    </ol>
+
+    <!-- tables -->
+    <!-- do not use tables for layout handling, use only for tabular data -->
+    <!-- use CSS for layout control -->
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Age</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>George Costanza</td>
+                <td>george@vandalay.com</td>
+                <td>35</td>
+            </tr>
+            <tr>
+                <td>Cosmo Kramer</td>
+                <td>kman@kramerica.com</td>
+                <td>45</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- in the real workd we would use CSS for this -->
+    <br>
+    <hr>
+    <br>
+
+    <!-- forms -->
+    <!-- cannot implement form behaviour in HTML forms -->
+    <form action="process.php" method="post">
+        <div>
+            <label for="">First Name</label>
+            <input type="text" name="firstName" id="" placeholder="Enter first name">
+        </div>
+        <br>
+        <div>
+            <label for="">Last Name</label>
+            <input type="text" name="lastName" id="">
+        </div>
+        <br>
+        <div>
+            <label for="">Email</label>
+            <input type="text" name="email" id="">
+        </div>
+        <br>
+        <div>
+            <label for="">Message</label>
+            <textarea name="message" id="" cols="30" rows="10"></textarea>
+        </div>
+        <br>
+        <div>
+            <label for="">Language</label>
+            <select name="language" id="">
+                <option value="english">English</option>
+                <option value="spanish">Spanish</option>
+                <option value="other">Other</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            <label for="">Age</label>
+            <input type="number" name="age" id="" value="30">
+        </div>
+        <br>
+        <div>
+            <label for="">Birthday</label>
+            <input type="date" name="birthday" id="">
+        </div>
+        <br>
+        <input type="submit" name="submit" value="Submit">
+    </form>
+
+    <!-- buttons outside a form, need JS for action -->
+    <button click="">Click Me</button>
+
+    <br>
+
+    <!-- images -->
+    <a href="images/sampleimg.jpeg"><img src="images/sampleimg.jpeg" alt="Sample Image" width="150px"></a>
+
+    <blockquote cite="https://google.com">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus, est repellat officia at incidunt
+        doloribus? Vero, quia enim autem, officia temporibus suscipit velit quis reprehenderit ea molestias numquam cum
+        quos quidem tempora maxime inventore eius perferendis aspernatur maiores? Doloribus ipsa repellat accusantium
+        necessitatibus eligendi quis illum nemo? Et, harum odit?
+    </blockquote>
+
+    <p>The <abbr title="Workd Wide Web">WWW</abbr> is awesome</p>
+
+    <p>This is an <cite>HTML</cite> crash course and cheatsheet</p>
+
+    <!-- create space at the bottom -->
+    <div style="margin-top: 500px;"></div>
+
+</body>
+
+</html>

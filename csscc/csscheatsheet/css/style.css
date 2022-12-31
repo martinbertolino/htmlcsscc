@@ -1,0 +1,249 @@
+/* h1 {
+    color: green;
+    background-color: yellow;
+} */
+
+/* reset everything */
+
+/* * {
+    margin: 0;
+    padding: 0;
+} */
+
+body {
+    background-color: #f4f4f4;
+    color: #555555;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 27px;
+    font-weight: normal;
+
+    /* alternative to above */
+    font: normal 22px Arial, Helvetica, sans-serif;
+
+    line-height: 1.6em;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: red;
+}
+
+a:active {
+    color: green;
+}
+
+/* a:visited {
+    color: yellow;
+} */
+
+.container {
+    /* no responsive */
+    /* width: 960px; */
+    width: 80%;
+    margin: auto;
+}
+
+.button {
+    background-color: #333;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+}
+
+.button:hover {
+    background-color: red;
+    color: black;
+}
+
+.clr {
+    clear: both;
+}
+
+.box-1 {
+    background-color: #333;
+    color: #fff;
+    border-right: 5px red solid;
+    border-left: 5px red solid;
+    border-top: 5px red solid;
+    border-bottom: 15px cornflowerblue solid;
+
+    border-width: 3px;
+    border-bottom-width: 17px;
+    border-top-style: solid;
+
+    /* shorthand */
+    border: 7px purple solid;
+
+    /* space between the content and the border */
+
+    /* long way */
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    /* shorthand */
+    padding: 10px;
+
+    /* space between the border and the outer content */
+    margin-top: 20px;
+    /* ... */
+
+    margin: 20px;
+    margin: 20px 0;
+}
+
+/* target the h1 withing box-1 */
+
+.box-1 h1 {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: lighter;
+    font-style: italic;
+    text-decoration: underline;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    word-spacing: 1em;
+}
+
+.box-2 {
+    border: 4px dotted gray;
+    padding: 20px;
+    margin: 20px;
+}
+
+.categories {
+    border: 1px solid gray;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.categories h2 {
+    text-align: center;
+}
+
+.categories ul {
+    padding: 0;
+    padding-left: 20px;
+    list-style: square;
+    list-style: none;
+}
+
+.categories li {
+    padding-bottom: 10px;
+    border-bottom: 1px dotted magenta;
+    list-style-image: url('../images/check.png');
+}
+
+.my-form {
+    padding: 20px;
+}
+
+.my-form .form-group {
+    padding-bottom: 20px;
+}
+
+.my-form label {
+    /* this will show them in their own line */
+    display: block;
+}
+
+/* this only targets inputs of type text only and textareas*/
+.my-form input[type="text"],
+.my-form textarea {
+    padding: 8px;
+    width: 100%;
+}
+
+/* see above for class button */
+/* .my-form input[type="submit"] {
+    background-color: #333;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+} */
+
+.block {
+    /* BTW: flexbox takes care of this stuff  */
+    /* float: left; */
+    float: right;
+    width: 33.3%;
+    border: 1px solid #ccc;
+    padding: 10px;
+    /* applies border and padding before calculating width */
+    box-sizing: border-box;
+}
+
+/* the selector is an id and not a class, hence the # */
+#main-block {
+    float: left;
+    width: 70%;
+}
+
+#sidebar {
+    float: right;
+    width: 30%;
+    background-color: #333;
+    color: #fff;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+/* position is static by default */
+
+.p-box {
+    width: 800px;
+    height: 500px;
+    border: 1px solid #000;
+    margin-top: 30px;
+    position: relative;
+    background-image: url("../images/bgimage.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+}
+
+/* this may be useful when building games that need precise positioning */
+
+.p-box h1 {
+    position: absolute;
+    top: 100px;
+    left: 200px;
+}
+
+.p-box h2 {
+    position: absolute;
+    bottom: 40px;
+    right: 100px;
+}
+
+/* this will allways be visibile as long as the browser window is taller than ~200px */
+.fix-me {
+    position: fixed;
+    top: 200px;
+}
+
+/* pseudo class? */
+.my-list li:first-child {
+    background-color: red;
+}
+
+.my-list li:last-child {
+    background-color: blue;
+}
+
+.my-list li:nth-child(5) {
+    background-color: yellow;
+}
+
+.my-list li:nth-child(even) {
+    background-color: purple;
+}
+
+.my-list li:nth-child(odd) {
+    background-color: salmon;
+}
